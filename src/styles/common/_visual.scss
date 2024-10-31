@@ -4,4 +4,13 @@
 	background: lightblue;
 	position: relative;
 	overflow: hidden;
+	padding: 10vh 10vw;
+
+	h2 {
+		position: absolute;
+		top: 30vh;
+		left: 10vw;
+		font: bold 8vmax/1 'arial';
+		color: #fff;
+	}
 }

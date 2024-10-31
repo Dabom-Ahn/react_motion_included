@@ -1,9 +1,13 @@
-import Layout from '../components/Layout';
+import News from '../components/News';
+import Pics from '../components/Pics';
+import Visual from '../components/Visual';
 
 export default function Home() {
 	return (
-		<Layout title='Home'>
-			<p>Home Page</p>
-		</Layout>
+		<>
+			<Visual />
+			<News />
+			<Pics />
+		</>
 	);
 }

@@ -50,18 +50,22 @@ export default function Post() {
 
 	return (
 		<Layout title='Post'>
+			{/* 게시글 검색 폼 */}
 			<form className='searchBox' onSubmit={handleSubmit}>
 				<input type='text' />
 				<button>Search</button>
 			</form>
 
+			{/* 글 카테고리별 필터링 드롭다운 메뉴 */}
 			<select onChange={e => setCategory(e.target.value)}>
-				<option value=''>All Notes</option>
+				<option value=''>All POSTS</option>
 				<option value='BUSINESS'>Business</option>
 				<option value='PERSONAL'>Personal</option>
 				<option value='IMPORTANT'>Important</option>
 			</select>
+			<br />
 
+			{/* 글 작성 버튼 */}
 			<button>
 				<Link to='/post-add'>Write Post</Link>
 			</button>

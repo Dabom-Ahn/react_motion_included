@@ -17,7 +17,6 @@ export default function Home() {
 		for (const el of ref_wrap.current.children) {
 			ref_posArr.current.push(el.offsetTop);
 		}
-		console.log(ref_posArr.current);
 	};
 
 	useEffect(() => {

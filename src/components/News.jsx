@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export default function News({ Scroll, pos }) {
 	const currentScroll = Scroll - pos || 0;
 	const Data = ['text1', 'text2', 'text'];
